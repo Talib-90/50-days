@@ -28,12 +28,11 @@ while len(states) < 50:
         t.goto(state_row.x.item(), state_row.y.item())
         t.write(answer_state)
     elif answer_state == "Exit":
-        missing_states = []
-        for state in state_list:
-            if state not in states:
-                missing_states.append(state)
+        # missing_states = []
+        # for state in state_list:
+        #     if state not in states:
+        #         missing_states.append(state)
+        missing_states = [state for state in state_list if state not in states]
         missing_dataFrame = pd.DataFrame(missing_states)
         missing_dataFrame.to_csv("Day_18/Not guess states.csv")
         break
-
-# screen.mainloop()
