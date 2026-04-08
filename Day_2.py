@@ -24,7 +24,7 @@
 # print(type(True))
 # print(type(122.32))
 
-# print("\n---Run without erros---")
+# print("\n---Run without errors---")
 # print("Number of letters in your name: " + str(len(input("Enter your name"))))
 
 # Name = input("Enter your name")

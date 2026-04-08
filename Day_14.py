@@ -28,16 +28,14 @@ while is_gameOn:
                 print(f"You've won! The {winningColor} turtles is the winner!.")
             else:
                 print(f"You've lose! The {winningColor} turtles is the winner!.")
-    
+
         rand_distance = random.randint(0, 10)
         turtles.forward(rand_distance)
-
-
 
 # def move_forward():
 #     return tim.forward(10)
 
-# def move_bakward():
+# def move_backward():
 #     return tim.backward(10)
 
 # def move_left():
@@ -58,7 +56,7 @@ while is_gameOn:
 
 # window.listen()
 # window.onkey(move_forward, "w")
-# window.onkey(move_bakward, "s")
+# window.onkey(move_backward, "s")
 # window.onkey(move_left, "a")
 # window.onkey(move_right, "d")
 # window.onkey(clear, "c")

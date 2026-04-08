@@ -5,7 +5,7 @@
 
 # def format_name(fname, lname):
 #     """Take a first and last name and 
-#     format it to return a title case verison of the name"""
+#     format it to return a title case version of the name"""
 #     if fname == "" or lname == "":
 #         return "you did not provide valid inputs."
 #     format_fname = fname.title()
@@ -20,23 +20,29 @@
 def add(n1, n2):
     return n1 + n2
 
+
 def subtract(n1, n2):
     return n1 - n2
+
 
 def multiply(n1, n2):
     return n1 * n2
 
+
 def divide(n1, n2):
     return n1 / n2
 
+
 operation = {
-    "+":add,
-    "-":subtract,
-    "*":multiply,
-    "/":divide,
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide,
 }
 
 # print(operation["*"](4,8))
+
+
 def calculator():
     should_continue = True
     num1 = float(input("Enter first number: "))
@@ -57,5 +63,6 @@ def calculator():
             should_continue = False
             # print("\n" * 20)
             # calculator()
+
 
 calculator()

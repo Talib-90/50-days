@@ -1,6 +1,6 @@
 import random
-random_integer = random.randint(1,10)
-random_float = random.random() * 20 # OR
+random_integer = random.randint(1, 10)
+random_float = random.random() * 20  # OR
 random_float_2 = random.uniform(1, 10)
 
 # random_head_tail = random.randint(0, 1)
@@ -15,7 +15,7 @@ friends = ["ali", "bob", "talib", "raza", "zaid"]
 # Option - 1
 # print(random.choice(friends))
 # Option - 2
-random_friends = random.randint(0, len(friends)-1)
+random_friends = random.randint(0, len(friends) - 1)
 # print(friends[random_friends])
 
 # -----------------------------------------------
@@ -51,12 +51,12 @@ scissors = '''
 '''
 
 game_list = [rock, paper, scissors]
-computer_choice = random.randint(0,2)
+computer_choice = random.randint(0, 2)
 user_choice = int(input("What do you choose. Type 0 for Rock, 1 for Paper, 2 for Scissors: "))
-if user_choice >= 0 and user_choice <= 2:
-    print("You Choose\n",game_list[user_choice])
+if 0 <= user_choice <= 2:
+    print("You Choose\n", game_list[user_choice])
 
-print("Computer Choose \n",game_list[computer_choice])
+print("Computer Choose \n", game_list[computer_choice])
 
 if user_choice >= 3 or user_choice < 0:
     print("Please choose correctly.") 

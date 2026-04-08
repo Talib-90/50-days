@@ -1,6 +1,7 @@
-def function_with_input(name): # name is parameter
+def function_with_input(name):  # name is parameter
     print(f"Hello {name}")
     print(f"How do you do {name}")
+
 
 # function_with_input("Talib") # Passing value is argument
 
@@ -9,11 +10,12 @@ def life_in_weeks(age):
     weeksLeft = yearsLeft * 52
     print(f"You have {weeksLeft} weeks left.")
 
+
 def greet_with(name, location):
     print(f"Hello {name}")
     print(f"What is it like in {location}?")
 
-# greet_with("Ali", "North") # Positional argumant
+# greet_with("Ali", "North") # Positional argument
 # greet_with(location="New Karachi", name="Ali") # Keyword argument
 
 # Love Calculator

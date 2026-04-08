@@ -1,4 +1,5 @@
 import random
+
 # def is_prime(number):
 #     if number == 2:
 #         return True
@@ -25,15 +26,17 @@ print(numberGuessingGame)
 EASY_LEVEL = 10
 HARD_LEVEL = 5
 
+
 def check_answer(u_number, c_number, turns):
     if u_number > c_number:
         print("Too high.")
-        return turns -1
+        return turns - 1
     elif u_number < c_number:
         print("Too Loo.")
-        return turns -1
+        return turns - 1
     else:
         print(f"You got it! The answer was {c_number}.")
+
 
 def set_difficulty():
     choice = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
@@ -41,12 +44,11 @@ def set_difficulty():
         return EASY_LEVEL
     else:
         return HARD_LEVEL
-    
+
 
 def playGame():
-
     print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100.")
-    
+
     turns = set_difficulty()
     answer = random.randint(1, 100)
     guess = 0
@@ -56,9 +58,10 @@ def playGame():
         guess = int(input("Make a guess: "))
         turns = check_answer(guess, answer, turns)
         if turns == 0:
-            print(f"You have run out of guessus, you lose. The answer is {answer}")
+            print(f"You have run out of guesses, you lose. The answer is {answer}")
             return
         else:
             print("Guess again.")
-    
+
+
 playGame()

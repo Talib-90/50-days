@@ -24,11 +24,14 @@ import random
 #     tim = t.pendown()
 
 # Challenge _3
-colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray",
+           "SeaGreen"]
 direction = [0, 90, 180, 270]
 # t.pensize(10)
 # t.speed("fastest")
 t.colormode(255)
+
+
 # def drawShape(numOfSides):
 #     deg = 360 / numOfSides
 #     for _ in range(numOfSides):
@@ -49,8 +52,9 @@ def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    random_colors = (r,g,b)
+    random_colors = (r, g, b)
     return random_colors
+
 
 # for _ in range(100):
 #     t.color(random_color())
@@ -72,6 +76,7 @@ def random_color():
 #         t.setheading(t.heading() + size)
 
 # spirograph(5)
+
 
 t.penup()
 t.home()
@@ -100,6 +105,5 @@ t.pendown()
 
 t.setheading(270)
 t.forward(100)
-
 
 t.exitonclick()
