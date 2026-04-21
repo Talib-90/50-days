@@ -1,7 +1,8 @@
 import requests
+import os
 from datetime import datetime
 
-TOKEN = "klasdjnviewahvlkfdasjasdfqwe"
+TOKEN = os.environ.get("TOKEN")
 USERNAME = "talibilahi"
 
 pixela_endpoint = "https://pixe.la/v1/users"
@@ -47,11 +48,11 @@ pixela_params = {
 # Update request
 get_graph = f"{pixela_endpoint}/{USERNAME}/graphs/coding1/{today.strftime('%Y%m%d')}"
 update_data = {
-    "quantity":"4"
+    "quantity":"5"
 }
-# response = requests.put(url=get_graph, json=update_data, headers=headers)
-# print(response.text)
+response = requests.put(url=get_graph, json=update_data, headers=headers)
+print(response.text)
 
 # Delete request
-response = requests.delete(url=get_graph, headers=headers)
-print(response.text)
+# response = requests.delete(url=get_graph, headers=headers)
+# print(response.text)
