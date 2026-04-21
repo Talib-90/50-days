@@ -1,10 +1,10 @@
 import requests
 from twilio.rest import Client
 
-account_sid = "Acocunt sid"
-auth_token = "Your auth token"
+account_sid = "*******************"
+auth_token = "***************"
 
-API_KEY = "Your Api key"
+API_KEY = "***************"
 parameters = {
     "lat": 37.523449,
     "lon": 42.454289,
@@ -29,7 +29,7 @@ if is_condition:
     message = client.messages.create(
         body="It's is going to rain today. Remember to bring ☂️",
         from_="+13203612633",
-        to="Your phone number"
+        to="************"
     )
 
     print(message.status)
